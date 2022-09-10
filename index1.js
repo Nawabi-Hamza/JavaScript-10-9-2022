@@ -42,11 +42,16 @@ function MyC(){
     const theMass = document.getElementById('h1')
         let x = document.getElementById("inpVa").value
         try {
+            
             if (x == " ") throw "Empty input box!";
-            if (isNaN(x)) throw "Only number is valid";
-            x = parseInt(x)
-            if (x < 5) throw "It is small number 5"
-            else if (x >10 ) throw "It is to big"
+        
+             theMass.innerHTML= x.toUpperCase() 
+                   
+            if (isNaN) throw "this can not change"
+        //     if (isNaN(x)) throw "Only number is valid";
+            // x = parseInt(x)
+        //     if (x < 5) throw "It is small number 5"
+        //     else if (x >10 ) throw "It is to big"
         } 
         catch (error) {
             theMass.innerHTML= error
